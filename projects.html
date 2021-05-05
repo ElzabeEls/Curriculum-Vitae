@@ -21,14 +21,67 @@
 </head>
 
 <body>
-  <div class="sidebar">
-    <p>Home</p>
-    <p>Projects</p>
-    <p>Education</p>
-    <p>Work</p>
-    <p>Skills</p>
-    <p>Contact</p>
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <!-- Popper.JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+      <!-- jQuery Custom Scroller CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript">
+
+  $(document).ready(function() {
+
+    function toggleSidebar() {
+      $(".button").toggleClass("active");
+      $("main").toggleClass("move-to-left");
+      $(".sidebar-item").toggleClass("active");
+    }
+
+    $(".button").on("click tap", function() {
+      toggleSidebar();
+    });
+
+    $(document).keyup(function(e) {
+      if (e.keyCode === 27) {
+        toggleSidebar();
+      }
+    });
+
+  });
+  </script>
+
+  <div class="nav-right visible-xs">
+  <div class="button" id="btn">
+  <div class="bar top"></div>
+  <div class="bar middle"></div>
+  <div class="bar bottom"></div>
   </div>
+  </div>
+  <!-- nav-right -->
+
+
+  <div class="sidebar">
+  <ul class="sidebar-list">
+  <li class="sidebar-item"><a href="index.html" style="color:white; text-decoration:none">Home</a></li>
+  <li class="sidebar-item"><a href="projects.html" style="color:white; text-decoration:none">Projects</a></li>
+  <li class="sidebar-item"><a href="education.html" style="color:white; text-decoration:none">Education</a></li>
+  <li class="sidebar-item"><a href="work.html" style="color:white; text-decoration:none">Work</a> </li>
+  <li class="sidebar-item"><a href="skills.html" style="color:white; text-decoration:none">Skills</a> </li>
+  <li class="sidebar-item"><a href="contact.html" style="color:white; text-decoration:none">Contact</a></li>
+  </ul>
+  </div>
+
+  <main>
+  <div class="nav-right hidden-xs">
+  <div class="button" id="btn">
+  <div class="bar top"></div>
+  <div class="bar middle"></div>
+  <div class="bar bottom "></div>
+  </div>
+  </div>
+  <nav>
 
   <table cellpadding="0" cellspacing="0" border="0" width="100%" class="body" align="center">
     <tr>
@@ -88,6 +141,12 @@
   <video loop autoplay muted playsinline class="background relative">
     <source src="videos\white background bird flying in video download link SK creation Tamil ( 1080 X 864 60fps ).mp4" type="video/mp4">
   </video>
+</nav>
+
+<a href="https://codepen.io/tonkec/" class="ua" target="_blank">
+  <i class="fa fa-user"></i>
+</a>
+</main>
 </body>
 
 </html>

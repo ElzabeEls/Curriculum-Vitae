@@ -21,15 +21,67 @@
 </head>
 
   <body>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function() {
+
+      function toggleSidebar() {
+        $(".button").toggleClass("active");
+        $("main").toggleClass("move-to-left");
+        $(".sidebar-item").toggleClass("active");
+      }
+
+      $(".button").on("click tap", function() {
+        toggleSidebar();
+      });
+
+      $(document).keyup(function(e) {
+        if (e.keyCode === 27) {
+          toggleSidebar();
+        }
+      });
+
+    });
+    </script>
+
+    <div class="nav-right visible-xs">
+    <div class="button" id="btn">
+    <div class="bar top"></div>
+    <div class="bar middle"></div>
+    <div class="bar bottom"></div>
+    </div>
+    </div>
+    <!-- nav-right -->
+
 
     <div class="sidebar">
-      <p>Home</p>
-      <p>Projects</p>
-      <p>Education</p>
-      <p>Work</p>
-      <p>Skills</p>
-      <p>Contact</p>
+    <ul class="sidebar-list">
+    <li class="sidebar-item"><a href="index.html" style="color:white; text-decoration:none">Home</a></li>
+    <li class="sidebar-item"><a href="projects.html" style="color:white; text-decoration:none">Projects</a></li>
+    <li class="sidebar-item"><a href="education.html" style="color:white; text-decoration:none">Education</a></li>
+    <li class="sidebar-item"><a href="work.html" style="color:white; text-decoration:none">Work</a> </li>
+    <li class="sidebar-item"><a href="skills.html" style="color:white; text-decoration:none">Skills</a> </li>
+    <li class="sidebar-item"><a href="contact.html" style="color:white; text-decoration:none">Contact</a></li>
+    </ul>
     </div>
+
+    <main>
+    <div class="nav-right hidden-xs">
+    <div class="button" id="btn">
+    <div class="bar top"></div>
+    <div class="bar middle"></div>
+    <div class="bar bottom "></div>
+    </div>
+    </div>
+    <nav>
 
   <table cellpadding="0" cellspacing="0" border="0" width="100%" class="body" align="center">
   <tr>
@@ -39,189 +91,200 @@
           <td valign="top" align="center">
             <!-- add a css rule direction: rtl on your enclosing table for reverse stacking on mobile -->
             <table cellpadding="0" cellspacing="0" border="0" width="100%" class="bloc-main" style=" direction: rtl;" align="center">
-              <tr>
+              <tr class="row">
                   <!-- use th tag instead of td for the cells you want to stack on mobile -->
                   <!-- if you reverse stack on mobile, add css rule direction: ltr, to be sure the text itself isn't reversed -->
                   <!-- also, you should reverse the order of the th in your HTML code: if you want your text on the left and the image on the right, put first the th tag enclosing the image, then th with text -->
                   <!-- if you don't want reversed stack, just ignore all the direction rules on the table and the th and keep the right order for the th -->
-                  <th style="direction: ltr;">
-                    <h1>
-                      <span class="sq h2ls">E</span>
-                      <span class="sq h2ls">d</span>
-                      <span class="sq h2ls">u</span>
-                      <span class="sq h2ls">c</span>
-                      <span class="sq h2ls">a</span>
-                      <span class="sq h2ls">t</span>
-                      <span class="sq h2ls">i</span>
-                      <span class="sq h2ls">o</span>
-                      <span class="sq h2ls">n</span>
-                    </h1>
+                  <th style="direction: ltr;" class="col">
+                        <h2>
+                          <span class="sq h2ls">T</span>
+                          <span class="sq h2ls">r</span>
+                          <span class="sq h2ls">a</span>
+                          <span class="sq h2ls">i</span>
+                          <span class="sq h2ls">n</span>
+                          <span class="sq h2ls">i</span>
+                          <span class="sq h2ls">n</span>
+                          <span class="sq h2ls">g</span>
+                          <span style="display:inline-block;"></span>
+                          <span class="sq h2ls">&</span>
+                          <span style="display:inline-block;"></span>
+                          <span class="sq h2ls">D</span>
+                          <span class="sq h2ls">e</span>
+                          <span class="sq h2ls">v</span>
+                          <span class="sq h2ls">e</span>
+                          <span class="sq h2ls">l</span>
+                          <span class="sq h2ls">o</span>
+                          <span class="sq h2ls">p</span>
+                          <span class="sq h2ls">m</span>
+                          <span class="sq h2ls">e</span>
+                          <span class="sq h2ls">n</span>
+                          <span class="sq h2ls">t</span>
+                        </h2>
+                        <table>
+                          <tr>
+                            <td>
+                              <h3>Udemy</h3>
+                              <p>2021/03-2021/03</p>
+                            </td>
+                            <td>
+                              <h3>The Complete 2021 Web Development Bootcamp</h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <h3>Udemy</h3>
+                              <p>2021/03-2021/03</p>
+                            </td>
+                            <td>
+                              <h3></h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <h3>Udemy</h3>
+                              <p>2021/03-2021/03</p>
+                            </td>
+                            <td >
+                              <h3></h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <h3>Stellenbosch University</h3>
+                              <p>2017/02 - 2017/11</p>
+                            </td>
+                            <td>
+                              <h3>Computer Science 114 & Computer Science 144</h3>
+                              <p>Java Extra Subjects</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <h3>Stellenbosch University</h3>
+                              <p>2015/08/26 – 2015/08/28</p>
+                            </td>
+                            <td>
+                              <h3>Eskom EXPO for Young Scientists</h3>
+                              <p>Judge</p>
+                            </td>
+                          </tr>
 
-                    <table>
-                      <tr >
-                        <td >
-                          <h3>Stellenbosch University</h3>
-                          <p>2021/03 – (Current)</p>
-                        </td>
-                        <td >
-                          <h3>Bachelors in Engineering: Mechatronic</h3>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td >
-                          <h3>UNISA</h3>
-                          <p>2020/06 – 2020/12</p>
-                        </td>
-                        <td >
-                          <h3>Non-Degree Purposes (Mathematics & Physics)</h3>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td >
-                          <h3>UNISA</h3>
-                          <p>2019/06 – 2019/10</p>
-                        </td>
-                        <td >
-                          <h3>Short Course in Introduction <br> to Visual C#.Net</h3>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <h3>Stellenbosch University</h3>
-                          <p>2018/02 – (Interrupted)</p>
-                        </td>
-                        <td>
-                          <h3>Bachelors in Engineering: Mechatronic</h3>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <h3>Stellenbosch University</h3>
-                          <p>2016/02 – 2018/03/22</p>
-                        </td>
-                        <td>
-                          <h3>Bachelors Honors <br> in Education Management</h3>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <h3>Stellenbosch University</h3>
-                          <p>2015/02 – 2015/12/11</p>
-                        </td>
-                        <td>
-                          <h3>Post-Graduate Certificate <br>in Education (PGCE)</h3>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <h3>Stellenbosch University</h3>
-                          <p>2012/02 – 2015/03/05</p>
-                        </td>
-                        <td/>
-                          <h3>Bachelors in Science: <br>Human Life Sciences</h3>
-                          <p>Biology with Psychology</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </th>
-                  <th style="direction: ltr;">
-                    <h2>
-                      <span class="sq h2ls">T</span>
-                      <span class="sq h2ls">r</span>
-                      <span class="sq h2ls">a</span>
-                      <span class="sq h2ls">i</span>
-                      <span class="sq h2ls">n</span>
-                      <span class="sq h2ls">i</span>
-                      <span class="sq h2ls">n</span>
-                      <span class="sq h2ls">g</span>
-                      <span style="display:inline-block;"></span>
-                      <span class="sq h2ls">&</span>
-                      <span style="display:inline-block;"></span>
-                      <span class="sq h2ls">D</span>
-                      <span class="sq h2ls">e</span>
-                      <span class="sq h2ls">v</span>
-                      <span class="sq h2ls">e</span>
-                      <span class="sq h2ls">l</span>
-                      <span class="sq h2ls">o</span>
-                      <span class="sq h2ls">p</span>
-                      <span class="sq h2ls">m</span>
-                      <span class="sq h2ls">e</span>
-                      <span class="sq h2ls">n</span>
-                      <span class="sq h2ls">t</span>
-                    </h2>
-                    <table>
-                      <tr>
-                        <td>
-                          <h3>Udemy</h3>
-                          <p>2021/03-2021/03</p>
-                        </td>
-                        <td>
-                          <h3>The Complete 2021 Web Development Bootcamp</h3>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <h3>Udemy</h3>
-                          <p>2021/03-2021/03</p>
-                        </td>
-                        <td>
-                          <h3></h3>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <h3>Udemy</h3>
-                          <p>2021/03-2021/03</p>
-                        </td>
-                        <td >
-                          <h3></h3>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <h3>Stellenbosch University</h3>
-                          <p>2017/02 - 2017/11</p>
-                        </td>
-                        <td>
-                          <h3>Computer Science 114 & Computer Science 144</h3>
-                          <p>Java Extra Subjects</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <h3>Stellenbosch University</h3>
-                          <p>2015/08/26 – 2015/08/28</p>
-                        </td>
-                        <td>
-                          <h3>Eskom EXPO for Young Scientists</h3>
-                          <p>Judge</p>
-                        </td>
-                      </tr>
-                    </table>
 
-                    </td>
-                    </tr>
-                    </table>
-                  </th>
-              </tr>
-              <tr>
+                        </table>
+                      </th>
+
+                      <th style="direction: ltr;" class="col">
+                        <h1>
+                          <span class="sq h2ls">E</span>
+                          <span class="sq h2ls">d</span>
+                          <span class="sq h2ls">u</span>
+                          <span class="sq h2ls">c</span>
+                          <span class="sq h2ls">a</span>
+                          <span class="sq h2ls">t</span>
+                          <span class="sq h2ls">i</span>
+                          <span class="sq h2ls">o</span>
+                          <span class="sq h2ls">n</span>
+                        </h1>
+
+                        <table>
+                          <tr >
+                            <td >
+                              <h3>Stellenbosch University</h3>
+                              <p>2021/03 – (Current)</p>
+                            </td>
+                            <td >
+                              <h3>Bachelors in Engineering: Mechatronic</h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td >
+                              <h3>UNISA</h3>
+                              <p>2020/06 – 2020/12</p>
+                            </td>
+                            <td >
+                              <h3>Non-Degree Purposes (Mathematics & Physics)</h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td >
+                              <h3>UNISA</h3>
+                              <p>2019/06 – 2019/10</p>
+                            </td>
+                            <td >
+                              <h3>Short Course in Introduction <br> to Visual C#.Net</h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <h3>Stellenbosch University</h3>
+                              <p>2018/02 – (Interrupted)</p>
+                            </td>
+                            <td>
+                              <h3>Bachelors in Engineering: Mechatronic</h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <h3>Stellenbosch University</h3>
+                              <p>2016/02 – 2018/03/22</p>
+                            </td>
+                            <td>
+                              <h3>Bachelors Honors <br> in Education Management</h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <h3>Stellenbosch University</h3>
+                              <p>2015/02 – 2015/12/11</p>
+                            </td>
+                            <td>
+                              <h3>Post-Graduate Certificate <br>in Education (PGCE)</h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <h3>Stellenbosch University</h3>
+                              <p>2012/02 – 2015/03/05</p>
+                            </td>
+                            <td/>
+                              <h3>Bachelors in Science: <br>Human Life Sciences</h3>
+                              <p>Biology with Psychology</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </th>
+
+
+</tr>
+
+              <tr class="row">
                 <th style="direction: ltr;">
                   <div>
                     <h3>© 2021 Maria Elizabeth Els</h3>
                   </div>
                 </th>
               </tr>
+
+
             </table>
 
-          </td>
-        </tr>
+            </td>
+            </tr>
       </table>
-    </td>
-  </tr>
-  </table>
+                  </td>
+                </tr>
+              </table>
+
 
   <video loop autoplay muted playsrelative class="background relative">
     <source src="videos\white background bird flying in video download link SK creation Tamil ( 1080 X 864 60fps ).mp4" type="video/mp4">
   </video>
+</nav>
+
+<a href="https://codepen.io/tonkec/" class="ua" target="_blank">
+  <i class="fa fa-user"></i>
+</a>
+</main>
   </body>
   </html>

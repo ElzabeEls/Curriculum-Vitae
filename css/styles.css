@@ -1,7 +1,6 @@
 /* ****************************GEBRUIK DEFINITIEF********************************* */
 body {
 background-color: white;
-max-width: 89.5%;
   /*
 display: block;
    height: 100%;
@@ -82,16 +81,35 @@ a:hover img.default {
   display: none;
 }
 
+main{
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+nav{
+  width: 100%
+}
+
 .clipping-path {
   width: 100%    !important;
   height: auto   !important;
 }
 
+main {
+  z-index: 2;
+  position: relative;
+  height: 100%;
+  background-color: white;
+  -webkit-transition: transform .7s ease-in-out;
+  -moz-transition: transform .7s ease-in-out;
+  -ms-transition: transform .7s ease-in-out;
+  -o-transition: transform .7s ease-in-out;
+  transition: transform .7s ease-in-out;
+}
 
 .titlevideo {
 -webkit-clip-path: url(#clip-00);
 position:absolute;
-left:-5em;
+left:-7em;
 top:-3em;
 margin-left:0;
 margin-right:0;
@@ -99,23 +117,12 @@ width: 100%    !important;
 height: auto   !important;
 }
 
-@media only screen and (max-width: 767px)
-{
-    .one, .two, .three, .four, .five, .six
-    {
-        display: inline-flex;
-        float: none;
-        width: 100%;
-        padding: 1em 0;
-    }
-}
-
 .background {
   margin-left: 0;
   margin-right: 0;
   position: relative;
   left: -3em;
-  width: 110%    !important;
+  width: 103.2%    !important;
   height: auto   !important;
 
 }
@@ -124,7 +131,7 @@ height: auto   !important;
   content: "";
   display: inline-block;
   height: 100%;
-  width: 100%;
+  width: 103.2%;
       position: absolute;
       top: 0;
       right: 0;
@@ -270,33 +277,314 @@ z-index: -1;
    text-decoration: none;
 }
 
-.wrapper {
-    display: flex;
-    width: 100%;
+.sidebar {
+  height: 100%;
+  width: 10%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  right: 0;
+  background-color: #1d1d1d;
+  font-family: open sans, sans-serif;
+}
+
+#btn{
+  position: fixed;
+  right: 2%;
+}
+
+.bar {
+  z-index: 5;
+  display: block;
+  height: 5px;
+  width: 50px;
+  background-color:#770020;
+  margin: 10px auto;
+}
+
+.button {
+    z-index: 5;
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.nav-right {
+    z-index: 5;
+  position: fixed;
+  right: 40px;
+  top: 20px;
+}
+
+.nav-right.visible-xs {
+  z-index: 3;
+}
+
+.hidden-xs {
+    z-index: 5;
+  display: none;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+.bar {
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.nav-right.visible-xs .active .bar {
+  background-color: #FFF;
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.button.active .top {
+  -webkit-transform: translateY(15px) rotateZ(45deg);
+  -moz-transform: translateY(15px) rotateZ(45deg);
+  -ms-transform: translateY(15px) rotateZ(45deg);
+  -o-transform: translateY(15px) rotateZ(45deg);
+  transform: translateY(15px) rotateZ(45deg);
+}
+
+.button.active .bottom {
+  -webkit-transform: translateY(-15px) rotateZ(-45deg);
+  -moz-transform: translateY(-15px) rotateZ(-45deg);
+  -ms-transform: translateY(-15px) rotateZ(-45deg);
+  -o-transform: translateY(-15px) rotateZ(-45deg);
+  transform: translateY(-15px) rotateZ(-45deg);
+}
+
+.button.active .middle {
+  width: 0;
+}
+
+.move-to-left {
+  z-index: 2;
+  -webkit-transform: translateX(-10%);
+  -moz-transform: translateX(-10%);
+  -ms-transform: translateX(-10%);
+  -o-transform: translateX(-10%);
+  transform: translateX(-10%);
+}
+
+.sidebar-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.sidebar-item {
+  margin: 30px 0;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+.sidebar-item:first-child {
+  -webkit-transition: all .7s .2s ease-in-out;
+  -moz-transition: all .7s .2s ease-in-out;
+  -ms-transition: all .7s .2s ease-in-out;
+  -o-transition: all .7s .2s ease-in-out;
+  transition: all .7s .2s ease-in-out;
+}
+
+.sidebar-item:nth-child(2) {
+  -webkit-transition: all .7s .4s ease-in-out;
+  -moz-transition: all .7s .4s ease-in-out;
+  -ms-transition: all .7s .4s ease-in-out;
+  -o-transition: all .7s .4s ease-in-out;
+  transition: all .7s .4s ease-in-out;
+}
+
+.sidebar-item:nth-child(3) {
+  -webkit-transition: all .7s .6s ease-in-out;
+  -moz-transition: all .7s .6s ease-in-out;
+  -ms-transition: all .7s .6s ease-in-out;
+  -o-transition: all .7s .6s ease-in-out;
+  transition: all .7s .6s ease-in-out;
+}
+
+.sidebar-item:last-child {
+  -webkit-transition: all .7s .8s ease-in-out;
+  -moz-transition: all .7s .8s ease-in-out;
+  -ms-transition: all .7s .8s ease-in-out;
+  -o-transition: all .7s .8s ease-in-out;
+  transition: all .7s .6s ease-in-out;
+}
+
+.sidebar-item.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.sidebar-anchor {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.sidebar-anchor:before {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  -ms-transition: all .7s ease-in-out;
+  -o-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.sidebar-anchor:hover:before {
+  width: 100%;
+}
+
+.ua {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+}
+
+.fa {
+  font-size: 1.4em;
+  color: #EF8354;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.ua:hover .fa {
+  color: #FFF;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+@media (min-width: 480px) {
+  .nav-list {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-right {
+    position: absolute;
+  }
+  .hidden-xs {
+    display: block;
+  }
+  .visible-xs {
+    display: none;
+  }
 }
 
 
+/*
 .sidebar {
   margin-top: 0;
 padding-right: 0;
 /*background: #ffcc00;*/
-  background: #1d1d1d;
+/*  background: #1d1d1d;
   -webkit-text-decoration-color:white;
   font-family: open sans, sans-serif;
-width: 8%;
-height: 100%;
-position: fixed;
-left: 92%;
+width: 12%;
+left: 89%;
 line-height: 0.5em;
 color: #1d1d1d;
 font-size: 0.5em;
+transition: all 0.3s;
+
+
+position: fixed; /* Stay in place */
+/* z-index: 2; /* Stay on top */
+/*top: 0;
+overflow-x: hidden; /* Disable horizontal scroll */
+/*transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+/*}
+
+
+/* The sidebar links */
+/*.sidebar a {
+  transition: 0.3s;
 }
 
-#sidebar {
-    position: fixed;
-    top: 0;
-    left: 92%;
-    z-index: 999;
-    transition: all 0.3s;
+/* When you mouse over the navigation links, change their color */
+/*.sidebar a:hover {
+  color: #f1f1f1;
 }
+
+.openNav(){
+  height: 100%;
+}
+
+.closeNac(){
+  height: 0;
+}
+
+/* Position and style the close button (top right corner) */
+/*.sidebar .closebtn {
+  position: fixed;
+}
+
+/* The button used to open the sidebar */
+/*.openbtn {
+  cursor: pointer;
+  background-color: pink;
+  color: blue;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: pink;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/*#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+/*}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/*@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}*/
 /* ****************************TAG SELECTORS********************************* */

@@ -34,59 +34,63 @@
       <!-- jQuery Custom Scroller CDN -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-<!--
-$(document).ready(function () {
 
-    $("#sidebar").mCustomScrollbar({
-         theme: "minimal"
-    });
+        <script type="text/javascript">
 
-    $('#sidebarCollapse').on('click', function () {
-        // open or close navbar
-        $('#sidebar').toggleClass('active');
-        // close dropdowns
-        $('.collapse.in').toggleClass('in');
-        // and also adjust aria-expanded attributes we use for the open/closed arrows
-        // in our CSS
-        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-    });
+        $(document).ready(function() {
 
-});
--->
+          function toggleSidebar() {
+            $(".button").toggleClass("active");
+            $("main").toggleClass("move-to-left");
+            $(".sidebar-item").toggleClass("active");
+          }
 
-  <div class="wrapper">
-      <!-- Sidebar -->
-      <nav id="sidebar" class="sidebar">
-          <div class="sidebar-header">
-              <h3>M.E. Els</h3>
-          </div>
+          $(".button").on("click tap", function() {
+            toggleSidebar();
+          });
 
-          <ul class="list-unstyled components">
-            <li> <a class="nav-link" href="index.html" style="color:white">Home</a></li>
-            <li><a class="nav-link" href="projects.html" style="color:white">Projects</a></li>
-            <li><a class="nav-link" href="education.html" style="color:white">Education</a></li>
-            <li> <a class="nav-link" href="work.html" style="color:white">Work</a> </li>
-            <li> <a class="nav-link" href="skills.html" style="color:white">Skills</a> </li>
-            <li><a class="nav-link" href="contact.html" style="color:white">Contact</a></li>
-          </ul>
+          $(document).keyup(function(e) {
+            if (e.keyCode === 27) {
+              toggleSidebar();
+            }
+          });
 
-      </nav>
+        });
+        </script>
 
-
-      <!-- Page Content -->
-      <div id="content" class="sidebar">
-
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-              <div class="container-fluid">
-
-                  <button type="button" id="sidebarCollapse" class="btn btn-info">
-                      <i class="fas fa-align-right"></i>
-                      <span>Toggle Sidebar</span>
-                  </button>
-              </div>
-          </nav>
-      </div>
+      <div class="nav-right visible-xs">
+    <div class="button" id="btn">
+      <div class="bar top"></div>
+      <div class="bar middle"></div>
+      <div class="bar bottom"></div>
+    </div>
   </div>
+  <!-- nav-right -->
+
+
+  <div class="sidebar">
+    <ul class="sidebar-list">
+      <li class="sidebar-item"><a class="anc" href="index.html" style="color:white; text-decoration:none">Home</a></li>
+      <li class="sidebar-item"><a class="anc" href="projects.html" style="color:white; text-decoration:none">Projects</a></li>
+      <li class="sidebar-item"><a class="anc" href="education.html" style="color:white; text-decoration:none">Education</a></li>
+      <li class="sidebar-item"><a class="anc" href="work.html" style="color:white; text-decoration:none">Work</a> </li>
+      <li class="sidebar-item"><a class="anc" href="skills.html" style="color:white; text-decoration:none">Skills</a> </li>
+      <li class="sidebar-item"><a class="anc" href="contact.html" style="color:white; text-decoration:none">Contact</a></li>
+    </ul>
+  </div>
+
+<main>
+  <div class="nav-right hidden-xs">
+    <div class="button" id="btn">
+      <div class="bar top"></div>
+      <div class="bar middle"></div>
+      <div class="bar bottom "></div>
+    </div>
+  </div>
+  <nav>
+
+    <!-- nav-right -->
+
 
   <table cellpadding="0" cellspacing="0" border="0" width="100%" class="body" align="center">
     <tr>
@@ -94,7 +98,7 @@ $(document).ready(function () {
         <table cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;min-width:100%" align="center" class="container">
           <tr>
             <td valign="top" align="center">
-          <tr>
+          <tr class="row">
             <th style="direction: ltr;">
 
               <div>
@@ -359,14 +363,14 @@ $(document).ready(function () {
         <table cellpadding="0" cellspacing="0" border="0" width="100%" class="bloc-main" style="direction: rtl;" align="center">
 
 
-          <tr>
+          <tr class="row">
             <!-- use th tag instead of td for the cells you want to stack on mobile -->
             <!-- if you reverse stack on mobile, add css rule direction: ltr, to be sure the text itself isn't reversed -->
             <!-- also, you should reverse the order of the th in your HTML code: if you want your text on the left and the image on the right, put first the th tag enclosing the image, then th with text -->
             <!-- if you don't want reversed stack, just ignore all the direction rules on the table and the th and keep the right order for the th -->
 
 
-            <th style="direction: ltr;">
+            <th style="direction: ltr;" class="col">
               <div>
 
                 <table>
@@ -436,7 +440,7 @@ $(document).ready(function () {
               </div>
             </th>
 
-            <th style="direction: ltr;">
+            <th style="direction: ltr;" class="col">
               <div>
 
                 <table>
@@ -509,7 +513,7 @@ $(document).ready(function () {
             </th>
           </tr>
 
-          <tr>
+          <tr class="row">
             <th style="direction: ltr;">
               <div>
                 <h3>© 2021 Maria Elizabeth Els</h3>
@@ -524,6 +528,12 @@ $(document).ready(function () {
   </td>
   </tr>
   </table>
+</nav>
+
+<a href="https://codepen.io/tonkec/" class="ua" target="_blank">
+  <i class="fa fa-user"></i>
+</a>
+</main>
 </body>
 
 </html>
