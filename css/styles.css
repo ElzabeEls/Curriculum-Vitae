@@ -127,6 +127,10 @@ height: auto   !important;
 
 }
 
+.wrapper{
+  background-image: url(images\Screenshot 2021-05-06 235720.png);
+}
+
 .background::before {
   content: "";
   display: inline-block;
