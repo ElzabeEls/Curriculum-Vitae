@@ -65,6 +65,7 @@
     <div class="sidebar">
     <ul class="sidebar-list">
     <li class="sidebar-item"><a href="index.html" style="color:white; text-decoration:none">Home</a></li>
+    <li class="sidebar-item"><a class="anc" href="profile.html" style="color:white; text-decoration:none">About Me</a></li>
     <li class="sidebar-item"><a href="projects.html" style="color:white; text-decoration:none">Projects</a></li>
     <li class="sidebar-item"><a href="education.html" style="color:white; text-decoration:none">Education</a></li>
     <li class="sidebar-item"><a href="work.html" style="color:white; text-decoration:none">Work</a> </li>
@@ -92,7 +93,7 @@
             <!-- add a css rule direction: rtl on your enclosing table for reverse stacking on mobile -->
             <table cellpadding="0" cellspacing="0" border="0" width="100%" class="bloc-main" style=" direction: rtl;" align="center">
             </tr>
-            <tr class="row">
+            <tr class="row container-fluid">
               <th style="direction: ltr;" class="col">
                 <h1>
                 <span class="sq h1ls">C</span>
@@ -115,56 +116,14 @@
 
                           </tr>
 
-              <tr class="row">
+              <tr class="row container-fluid">
                   <!-- use th tag instead of td for the cells you want to stack on mobile -->
                   <!-- if you reverse stack on mobile, add css rule direction: ltr, to be sure the text itself isn't reversed -->
                   <!-- also, you should reverse the order of the th in your HTML code: if you want your text on the left and the image on the right, put first the th tag enclosing the image, then th with text -->
                   <!-- if you don't want reversed stack, just ignore all the direction rules on the table and the th and keep the right order for the th -->
-                  <th style="direction: ltr;" class="col">
-                    <h1>
-                    <span class="sq h2ls">R</span>
-                    <span class="sq h2ls">e</span>
-                    <span class="sq h2ls">f</span>
-                    <span class="sq h2ls">e</span>
-                    <span class="sq h2ls">r</span>
-                    <span class="sq h2ls">e</span>
-                    <span class="sq h2ls">n</span>
-                    <span class="sq h2ls">c</span>
-                    <span class="sq h2ls">e</span>
-                    <span class="sq h2ls">s</span>
-                  </h1>
 
-                  <table style="font-family: open sans, sans-serif;">
-                  <tr>
-                    <td>        Name: Mr. Carl Kingsley<br>
-                              Relationship: Church Leader<br>
-                              Telephone: 0716846509<br>
-                              Email: kingsleycarl@gmail.com <br></td>
-                  </tr>
-                  <tr>
-                    <td>        Name: Miss Jessica Canham<br>
-                            Relationship: Manager<br>
-                            Company/Employer: CODESPACE<br>
-                            <a href="https://www.linkedin.com/in/maria-elizabeth-els-343bb5178/">LinkedIn Recommendation</a> <br></td>
-                  </tr>
-                  <tr>
-                    <td>        Name: Mr. Pete Le Roux<br>
-                            Relationship: IEB Cluster Leader<br>
-                            Company/Employer: Elkanah House<br>
-                            Telephone: 0827091149<br>
-                            Email: petel@elkanah.co.za <br></td>
-                  </tr>
-                  <tr>
-                    <td>        Name: Mrs. Bianca Elema<br>
-                            Relationship: Director<br>
-                            Company/Employer: Edu-AssistSA<br>
-                            Telephone: 07605063671<br>
-                            Email: bianca@eduassistsa.co.za <br></td>
-                  </tr>
-                  </table>
-                </th>
 
-                <th style="direction: ltr;" class="col">
+                <th style="direction: ltr;" class="col-lg-6 col-md-6">
                                   <form action="mailto:elzzels25@gmail.com" method="post" enctype="text/plain">
                                     <label style="color: #1d1d1d; font-family: open sans, sans-serif;">Your Name:</label>
                                     <input type="yourName" name="" value="" style="background: #ffc900"> <br>
@@ -176,13 +135,57 @@
                                   </form>
                                   </th>
 
+                                  <th style="direction: ltr;" class="col-lg-6 col-md-6">
+                                    <h1>
+                                    <span class="sq h2ls">R</span>
+                                    <span class="sq h2ls">e</span>
+                                    <span class="sq h2ls">f</span>
+                                    <span class="sq h2ls">e</span>
+                                    <span class="sq h2ls">r</span>
+                                    <span class="sq h2ls">e</span>
+                                    <span class="sq h2ls">n</span>
+                                    <span class="sq h2ls">c</span>
+                                    <span class="sq h2ls">e</span>
+                                    <span class="sq h2ls">s</span>
+                                  </h1>
+
+                                  <table style="font-family: open sans, sans-serif;" class="alright">
+                                  <tr>
+                                    <td>        Name: Mr. Carl Kingsley<br>
+                                              Relationship: Church Leader<br>
+                                              Telephone: 0716846509<br>
+                                              Email: kingsleycarl@gmail.com <br></td>
+                                  </tr>
+                                  <tr>
+                                    <td>        Name: Miss Jessica Canham<br>
+                                            Relationship: Manager<br>
+                                            Company/Employer: CODESPACE<br>
+                                            <a href="https://www.linkedin.com/in/maria-elizabeth-els-343bb5178/">LinkedIn Recommendation</a> <br></td>
+                                  </tr>
+                                  <tr>
+                                    <td>        Name: Mr. Pete Le Roux<br>
+                                            Relationship: IEB Cluster Leader<br>
+                                            Company/Employer: Elkanah House<br>
+                                            Telephone: 0827091149<br>
+                                            Email: petel@elkanah.co.za <br></td>
+                                  </tr>
+                                  <tr>
+                                    <td>        Name: Mrs. Bianca Elema<br>
+                                            Relationship: Director<br>
+                                            Company/Employer: Edu-AssistSA<br>
+                                            Telephone: 07605063671<br>
+                                            Email: bianca@eduassistsa.co.za <br></td>
+                                  </tr>
+                                  </table>
+                                </th>
+
 
             </table>
 
           </td>
         </tr>
 
-        <tr class="row">
+        <tr class="row container-fluid">
           <th style="direction: ltr;" class="col">
             <div>
               <h3>© 2021 Maria Elizabeth Els</h3>
@@ -202,9 +205,9 @@
 
 </nav>
 
-<a href="https://codepen.io/tonkec/" class="ua" target="_blank">
+<!-- <a href="https://codepen.io/tonkec/" class="ua" target="_blank">
   <i class="fa fa-user"></i>
-</a>
+</a> -->
 </main>
   </body>
   </html>

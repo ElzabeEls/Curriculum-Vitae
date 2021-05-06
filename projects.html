@@ -65,6 +65,7 @@
   <div class="sidebar">
   <ul class="sidebar-list">
   <li class="sidebar-item"><a href="index.html" style="color:white; text-decoration:none">Home</a></li>
+  <li class="sidebar-item"><a class="anc" href="profile.html" style="color:white; text-decoration:none">About Me</a></li>
   <li class="sidebar-item"><a href="projects.html" style="color:white; text-decoration:none">Projects</a></li>
   <li class="sidebar-item"><a href="education.html" style="color:white; text-decoration:none">Education</a></li>
   <li class="sidebar-item"><a href="work.html" style="color:white; text-decoration:none">Work</a> </li>
@@ -83,7 +84,7 @@
   </div>
   <nav>
 
-  <table cellpadding="0" cellspacing="0" border="0" width="100%" class="body" align="center">
+  <table cellpadding="0" cellspacing="0" border="0" width="100%" class="body container-fluid" align="center">
     <tr>
       <td valign="top" align="center">
         <table cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;min-width:100%" align="center" class="container">
@@ -93,7 +94,7 @@
               <table cellpadding="0" cellspacing="0" border="0" width="100%" class="bloc-main" style="direction: rtl;" align="center">
 
                 <tr>
-                  <th style="direction: ltr;">
+                  <th style="direction: ltr;" class="row container-fluid">
                     <h1>
                       <span class="sq h1ls">P</span>
                       <span class="sq h1ls">r</span>
@@ -106,12 +107,12 @@
                     </h1>
                   </th>
                 </tr>
-                <tr>
+                <tr class="row container-fluid">
                   <!-- use th tag instead of td for the cells you want to stack on mobile -->
                   <!-- if you reverse stack on mobile, add css rule direction: ltr, to be sure the text itself isn't reversed -->
                   <!-- also, you should reverse the order of the th in your HTML code: if you want your text on the left and the image on the right, put first the th tag enclosing the image, then th with text -->
                   <!-- if you don't want reversed stack, just ignore all the direction rules on the table and the th and keep the right order for the th -->
-                  <th style="direction: ltr;">
+                  <th style="direction: ltr;" class="col-lg-3 col-md-4">
                     <a href="https://www.instagram.com/__elz.__/">
                       <img class="default" src="images\elzzpr1.jpg" height="200em" width="200em" / style="border-radius:50%">
                       <img class="hover" src="images\Logo&Slogan.png" width="200em" height="200em" / style="border-radius:50%">
@@ -119,11 +120,15 @@
                       <!--   <span><img class="default" src="images\elzz.jpg" height="126.4px" width="95.56px"/></span> -->
                     </a>
                   </th>
-                  <th style="direction: ltr;">
+                  <th style="direction: ltr;" class="col-lg-3 col-md-4">
+                  </th>
+                  <th style="direction: ltr;" class="col-lg-3 col-md-4">
+                  </th>
+                  <th style="direction: ltr;" class="col-lg-3 col-md-4">
                   </th>
                 </tr>
                 <tr>
-                  <th style="direction: ltr;">
+                  <th style="direction: ltr;" class="row container-fluid">
                     <div>
                       <h3>© 2021 Maria Elizabeth Els</h3>
                     </div>
@@ -143,9 +148,9 @@
   </video>
 </nav>
 
-<a href="https://codepen.io/tonkec/" class="ua" target="_blank">
+<!-- <a href="https://codepen.io/tonkec/" class="ua" target="_blank">
   <i class="fa fa-user"></i>
-</a>
+</a> -->
 </main>
 </body>
 

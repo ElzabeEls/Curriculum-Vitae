@@ -109,8 +109,8 @@ main {
 .titlevideo {
 -webkit-clip-path: url(#clip-00);
 position:absolute;
-left:-7em;
-top:-3em;
+left:-10%;
+top:-6%;
 margin-left:0;
 margin-right:0;
 width: 100%    !important;
@@ -121,8 +121,8 @@ height: auto   !important;
   margin-left: 0;
   margin-right: 0;
   position: relative;
-  left: -3em;
-  width: 103.2%    !important;
+
+  width: 103.5%    !important;
   height: auto   !important;
 
 }
@@ -198,7 +198,6 @@ letter-spacing: -0.22em;
 
 .relative {
   position: relative;
-left: -10em;
 bottom: 55em;
 z-index: -1;
 }
@@ -208,25 +207,35 @@ z-index: -1;
   padding: 0;
   margin: 0;
   position: relative;
-  bottom: 30em;
-  left: 10em;
+  bottom: 30%;
+  left: 10%;
+}
+
+.alright
+{
+  text-align: left;
 }
 
 .relativeprofilep {
   color: #1d1d1d;
   font-weight: bold;
   position: relative;
-  top: -3em;
+  top: 55%;
+  left: -6%;
     font-size: 2.5em;
+}
+
+.container-fluid{
+  text-align: center;
 }
 
 .relativeprofilepic {
   position: relative;
-  left: 8em;
-  top: -5em;
+  left: 2%;
+  top: 38%;
   margin: 0;
-  height: 30em;
-  width: 30em;
+  height: 33em;
+  width: 33em;
   border-radius: 50%;
 }
 

@@ -64,6 +64,7 @@
     <div class="sidebar">
     <ul class="sidebar-list">
     <li class="sidebar-item"><a href="index.html" style="color:white; text-decoration:none">Home</a></li>
+    <li class="sidebar-item"><a class="anc" href="profile.html" style="color:white; text-decoration:none">About Me</a></li>
     <li class="sidebar-item"><a href="projects.html" style="color:white; text-decoration:none">Projects</a></li>
     <li class="sidebar-item"><a href="education.html" style="color:white; text-decoration:none">Education</a></li>
     <li class="sidebar-item"><a href="work.html" style="color:white; text-decoration:none">Work</a> </li>
@@ -82,16 +83,16 @@
     </div>
     <nav>
 
-  <table cellpadding="0" cellspacing="0" border="0" width="100%" class="body" align="center">
+  <table cellpadding="0" cellspacing="0" border="0" width="100%" class="body container-fluid" align="center">
   <tr>
     <td valign="top" align="center">
       <table cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;min-width:100%" align="center" class="container">
         <tr>
           <td valign="top" align="center">
             <!-- add a css rule direction: rtl on your enclosing table for reverse stacking on mobile -->
-            <table cellpadding="0" cellspacing="0" border="0" width="100%" class="bloc-main" style="direction: rtl;" align="center">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" class="bloc-main" style="direction: ltr;" align="center">
 <tr>
-  <th style="direction: ltr; font-size: 2em;">
+  <th style="direction: ltr;" class="row container-fluid">
     <h1>
       <span class="sq h1ls">M</span>
       <span class="sq h1ls">a</span>
@@ -115,35 +116,37 @@
     </h1>
   </th>
 </tr>
-              <tr>
+              <tr class="row container-fluid">
                   <!-- use th tag instead of td for the cells you want to stack on mobile -->
                   <!-- if you reverse stack on mobile, add css rule direction: ltr, to be sure the text itself isn't reversed -->
                   <!-- also, you should reverse the order of the th in your HTML code: if you want your text on the left and the image on the right, put first the th tag enclosing the image, then th with text -->
                   <!-- if you don't want reversed stack, just ignore all the direction rules on the table and the th and keep the right order for the th -->
+                  <th style="direction: ltr;" class="col-lg-4 col-md-4 col-sm-12">
+                      <img src="images\Me.jpg" alt="Maria Elizabeth Els Profile" class="relativeprofilepic">
+                  </th>
 
-                  <th style="direction: ltr;">
+                  <th style="direction: ltr;" class="col-lg-8 col-md-8 col-sm-12">
                     <p class="relativeprofilep">I am a dedicated, responsible and reliable worker <br> who enjoys
                         problem solving and detailed orientated work.<br> My passion is to assist in the relief of human suffering.<br> I take pride in
                         delivering pristine quality work by painting with physics, <br> out of the box thinking and artistic paint sometimes as well.</strong>
                     </p>
                     <p class="relativeprofilep">Date of Birth:1993/08/21 Age:27</p>
                   </th>
-                  <th style="direction: ltr;">
-                      <img src="images\Me.jpg" alt="Maria Elizabeth Els Profile" class="relativeprofilepic">
-                  </th>
+
+              </tr>
+
+              <tr>
+                <th style="direction: ltr;" class="row container-fluid">
+                  <div>
+                    <h3>© 2021 Maria Elizabeth Els</h3>
+                  </div>
+                </th>
               </tr>
             </table>
 
           </td>
         </tr>
 
-        <tr>
-          <th style="direction: ltr;">
-            <div>
-              <h3>© 2021 Maria Elizabeth Els</h3>
-            </div>
-          </th>
-        </tr>
       </table>
     </td>
   </tr>
@@ -155,8 +158,8 @@
   </body>
 </nav>
 
-<a href="https://codepen.io/tonkec/" class="ua" target="_blank">
+<!-- <a href="https://codepen.io/tonkec/" class="ua" target="_blank">
   <i class="fa fa-user"></i>
-</a>
+</a> -->
 </main>
   </html>
