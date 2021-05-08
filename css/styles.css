@@ -30,7 +30,7 @@ height: auto   !important;
 h1 {
   color: #540000;
   font-family: 'Lobster', cursive;
-  font-size: 6em !important;;
+  font-size: 8vw !important;;
   text-decoration: none;
   padding: 0;
   line-height: 1.25em;
@@ -42,7 +42,7 @@ h2 {
   text-decoration: none;
   margin: 0;
   line-height: 0.5em;
-  font-size: 4em !important;;
+  font-size: 6vw !important;
 }
 
 h3 {
@@ -51,10 +51,30 @@ h3 {
       margin: 0;
 }
 
+h4{
+  color: #540000;
+  font-family: 'Lobster', cursive;
+  text-decoration: none;
+  margin: 0;
+  line-height: 0.5em;
+  font-size: 6.4vw !important;
+
+}
+
+h5{
+  color: #540000;
+  font-family: 'Lobster', cursive;
+  text-decoration: none;
+  margin: 0;
+  line-height: 0.5em;
+  font-size: 3.5vw !important;
+  padding-right: 10vw;
+}
+
 p {
   color: #1d1d1d;
   font-family: open sans, sans-serif;
-  font-size: 0.5em;
+  font-size: 0.7em;
     margin: 0;
 }
 
@@ -91,11 +111,6 @@ nav{
   width: 100%;
 }
 
-.clipping-path {
-  width: 100%    !important;
-  height: auto   !important;
-}
-
 main {
   z-index: 2;
   position: relative;
@@ -108,11 +123,21 @@ main {
   transition: transform .7s ease-in-out;
 }
 
+tr{
+  margin: 0
+  padding: 0;
+}
+
+.clipping-path {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
 .titlevideo {
 -webkit-clip-path: url(#clip-00);
 position:absolute;
-left:-10%;
-top:-6%;
+left:-10vw;
+top:-6vw;
 margin-left:0;
 margin-right:0;
 width: 100%    !important;
@@ -209,13 +234,18 @@ z-index: -1;
   text-align: left;
 }
 
+.indexdivs{
+  align-self: left;
+align-content: left !important;
+
+}
+
 .relativeprofilep {
   color: #1d1d1d;
   font-weight: bold;
-  position: relative;
-  top: 55%;
-  left: -6%;
-    font-size: 2.5em;
+  padding-top: 7vw;
+  padding-right: 5vw;
+    font-size: 1.5vw;
 }
 
 .container-fluid{
@@ -223,9 +253,6 @@ z-index: -1;
 }
 
 .relativeprofilepic {
-  position: relative;
-  left: 2%;
-  top: 38%;
   margin: 0;
   height: 33em;
   width: 33em;
@@ -234,9 +261,13 @@ z-index: -1;
 
 .imsize {
   margin: 0;
-  height: 10em;
-  width: 10em;
+  height: 13em;
+  width: 13em;
   border-radius: 50%;
+}
+
+.alleft{
+  text-align: right;
 }
 
 .BUTTON_ADM {
@@ -281,7 +312,7 @@ z-index: -1;
 
 .sidebar {
   height: 100%;
-  width: 10%;
+  width: 10em;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -376,11 +407,11 @@ z-index: -1;
 
 .move-to-left {
   z-index: 2;
-  -webkit-transform: translateX(-10%);
-  -moz-transform: translateX(-10%);
-  -ms-transform: translateX(-10%);
-  -o-transform: translateX(-10%);
-  transform: translateX(-10%);
+  -webkit-transform: translateX(-10em);
+  -moz-transform: translateX(-10em);
+  -ms-transform: translateX(-10em);
+  -o-transform: translateX(-10em);
+  transform: translateX(-10em);
 }
 
 .sidebar-list {
