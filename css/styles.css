@@ -630,6 +630,10 @@ align-content: left !important;
 #map {
   height: 28vw;
   width: 55vw;
+  overflow: visible;
+  height:100%;
+  margin:0;
+  padding:0;
 }
 
 
