@@ -14,7 +14,6 @@ table{
   width: 100%;
 }
 
-
 svg {
   height: 0;
   width: 0;
@@ -127,7 +126,7 @@ p {
 }
 
 .ap:hover {
-color:#ffc900;
+color:#ddc285;
 }
 
 .ac {
@@ -136,7 +135,8 @@ color:#ffc900;
 }
 
 .ac:hover {
-color:#ffc900;
+color:#ddc285;
+/*#ffc900*/
 }
 
 a {
@@ -145,7 +145,7 @@ a {
 }
 
 a:hover {
-color:#ffc900;
+color:#ddc285;
 }
 
 a img.hover {
@@ -348,11 +348,11 @@ align-content: left !important;
 
 .BUTTON_ADM {
    background: #1d1d1d;
-   background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
-   background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
-   background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
-   background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
-   background-image: -webkit-gradient(to bottom, #3D94F6, #1E62D0);
+   background-image: -webkit-linear-gradient(top, #0e131c, #0e131c);
+   background-image: -moz-linear-gradient(top, #0e131c, #0e131c);
+   background-image: -ms-linear-gradient(top, #0e131c, #0e131c);
+   background-image: -o-linear-gradient(top, #0e131c, #0e131c);
+   background-image: -webkit-gradient(to bottom, #0e131c, #0e131c);
    -webkit-border-radius: 20px;
    -moz-border-radius: 20px;
    border-radius: 20px;
@@ -365,7 +365,7 @@ align-content: left !important;
    -moz-box-shadow: 1px 1px 20px 0 #000000;
    box-shadow: 1px 1px 20px 0 #000000;
    text-shadow: 1px 1px 20px #000000;
-   border: solid #3D94F6 1px;
+   border: solid #0e131c 1px;
    text-decoration: none;
    display: inline-block;
    cursor: pointer;
@@ -374,12 +374,12 @@ align-content: left !important;
 
 .BUTTON_ADM:hover {
    border: solid #1d1d1d 1px;
-   background: #1E62D0;
-   background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
-   background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
-   background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
-   background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
-   background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+   background: #0e131c;
+   background-image: -webkit-linear-gradient(top, #0e131c, #0e131c);
+   background-image: -moz-linear-gradient(top, #0e131c, #0e131c);
+   background-image: -ms-linear-gradient(top, #0e131c, #0e131c);
+   background-image: -o-linear-gradient(top, #0e131c, #0e131c);
+   background-image: -webkit-gradient(to bottom, #0e131c, #0e131c);
    -webkit-border-radius: 20px;
    -moz-border-radius: 20px;
    border-radius: 20px;
@@ -407,7 +407,7 @@ align-content: left !important;
   display: block;
   height: 5px;
   width: 50px;
-  background-color:#770020;
+  background-color:#540000;
   margin: 10px auto;
   border-radius: 38%;
 }
@@ -629,7 +629,7 @@ align-content: left !important;
 
 #map {
   height: 28vw;
-  width: 55vw;
+  width: 50vw;
   overflow: visible;
   height:100%;
   margin:0;

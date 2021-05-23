@@ -11,7 +11,7 @@ function initMap() {
     var marker = new google.maps.Marker({
       position: myLatLng,
       map: map,
-      icon:"images/clipart2350691.png"
+      icon:"images/Webp.net-resizeimage.png"
     });
 
   }
