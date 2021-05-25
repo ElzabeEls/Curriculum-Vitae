@@ -76,7 +76,7 @@ h6{
   text-decoration: none;
   margin: 0;
   line-height: 0.5em;
-  font-size: 2.8vw !important;
+  font-size: 3.3em !important;
   padding-right: 10vw;
 }
 
@@ -86,7 +86,7 @@ h6{
   text-decoration: none;
   margin: 0;
   line-height: 0.5em;
-  font-size: 2.8vw !important;
+  font-size: 2.2em !important;
   padding-right: 10vw;
 }
 
@@ -122,6 +122,14 @@ p {
   color: #1d1d1d;
   font-family: open sans, sans-serif;
   font-size: 0.7em;
+    margin: 0;
+}
+
+.ind{
+  color: #1d1d1d;
+  font-weight: bold;
+  font-family: open sans, sans-serif !important;
+  font-size: 0.9em;
     margin: 0;
 }
 
@@ -411,10 +419,10 @@ align-content: left !important;
 .bar {
   z-index: 5;
   display: block;
-  height: 5px;
-  width: 50px;
+  height: 0.3em;
+  width: 2.5em;
   background-color:#ddc285;
-  margin: 10px auto;
+  margin: 0.3em auto;
   border-radius: 38%;
 }
 
@@ -634,8 +642,8 @@ align-content: left !important;
 }
 
 .bresz{
-  height: 1vw;
-  width: 1.1vw;
+  height: 1em;
+  width: 1.1em;
   margin-left: 0.5vw;
 }
 
@@ -651,6 +659,7 @@ align-content: left !important;
 
 .bdiv{
      position: relative;
+     left: -5em;
 }
 
 .bdiv:hover span {
