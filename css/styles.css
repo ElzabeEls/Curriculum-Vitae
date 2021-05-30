@@ -319,6 +319,12 @@ bottom: 55em;
 z-index: -1;
 }
 
+.relatives {
+  position: relative;
+bottom: 60.5em;
+z-index: -1;
+}
+
 .alright
 {
   text-align: left;
@@ -659,7 +665,7 @@ align-content: left !important;
 
 .bdiv{
      position: relative;
-     
+
 }
 
 .bdiv:hover span {
