@@ -722,4 +722,14 @@ align-content: left !important;
      }
  }
 
+
+ .carousel {
+ text-align: center;
+ background-color: #ddc285;
+ margin: 0;
+ height: 20em !important;
+ width: 20em !important;
+ border-radius: 60% !important;
+ }
+
 /* ****************************TAG SELECTORS********************************* */
